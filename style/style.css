@@ -13,6 +13,7 @@
 header {
     background-color: orange;
     color: white;
+    margin-bottom: 50px;
 }
 
 .flex {
@@ -34,7 +35,7 @@ header {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -56,11 +57,50 @@ header {
 }
 
 .card {
-    width: 33%;
-    height: 200px;
-    background-color: crimson;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.gapped {
-    gap: calc(33%-5px);
+.img-card {
+    width: 100%;
+}
+
+
+.description-product {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.figure-box {
+    position: relative;
+}
+
+.liked-product {
+    padding: 8px 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.discount-percent {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    padding: 2px 5px;
+    background-color: crimson;
+    color: white;
+    margin-right: 1%;
+}
+
+.sustainability {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    padding: 2px 5px;
+    background-color: green;
+    color: white;
 }
